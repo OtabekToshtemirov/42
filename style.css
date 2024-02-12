@@ -1,0 +1,316 @@
+/*import font soleil*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI ", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.p-50{
+    position: relative;
+    top: 100px;
+}
+
+header {
+    border-bottom: 1px solid #d7d5d5;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+.nav_links {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: inherit;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.nav_links:hover {
+    background-color: #F1F5F9;
+}
+
+.logo img {
+    width: 60px;
+    margin-top: 10px;
+
+}
+.logo {
+    position: relative;
+    left: -15px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+}
+
+.logo a span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 7px;
+    background-color: #B9E3C8;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+}
+
+.login_button button {
+    background-color: #000000;
+    border-radius: 6px;
+    padding: 12px 32px;
+    color: white;
+}
+
+.login_button button:hover {
+    background-color: #2f2e2e;
+}
+
+.login_button i {
+    margin-right: 5px;
+}
+
+/*main section is start*/
+.tepa-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #F1F5F9;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+section .section_text {
+    width: 60%;
+    padding: 0 50px;
+}
+
+section .section_text h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 70px;
+}
+
+section .section_image {
+    width: 40%;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    margin-left: 30px;
+}
+
+section .section_image img {
+    width: 100%;
+}
+
+section .section_text p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #020817;
+    line-height: 28px;
+}
+
+section .section_text button {
+    background-color: #000000;
+    border-radius: 6px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+section .section_text button img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+section .section_text button:hover {
+    background-color: #2f2e2e;
+}
+
+/*main section start--------------------------------------*/
+main {
+    padding: 96px 32px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header-text {
+    width: 60%;
+}
+
+.main-header-img {
+    width: 40%;
+    position: relative;
+    top: 66px;
+}
+
+.main-header h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.main-header-text p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #64748b;
+    line-height: 28px;
+}
+
+.main-header-img img {
+    width: 40%;
+    margin-left: 200px;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card {
+    width: 381px;
+    border: 1px solid #d7d5d5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 80px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.card-description {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #64748b;
+    line-height: 24px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: #F1F5F9;
+    transition: 0.3s;
+}
+.join{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join button {
+    background-color: #000000;
+    border-radius: 6px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 28px;
+}
+.join button:hover {
+    background-color: #2f2e2e;
+}
+
+.join button img {
+    width: 40px;
+    margin-right: 5px;
+}
+.join p{
+    text-align: center;
+    width: 60%;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #64748b;
+}
+
+/*Statistics------------------------------*/
+.statistics {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 30px;
+}
+.statistics-card{
+    width: 381px;
+    border: 1px solid #d7d5d5;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F5F9;
+}
+.statistics-card h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.statistics-card span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f172a;
+    margin-top: 10px;
+    display: block;
+}
