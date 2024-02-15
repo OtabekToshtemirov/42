@@ -1,16 +1,31 @@
-/*import font soleil*/
+@font-face {
+    font-family: 'Soleil-regular'; /* you can choose any name */
+    src: url('fonts/SoleilRegular.otf'); /* replace with your font file path */
+}
+@font-face {
+    font-family: 'Soleil-bold'; /* you can choose any name */
+    src: url('fonts/SoleilBold.otf'); /* replace with your font file path */
+}
+@font-face {
+    font-family: 'Soleil-light'; /* you can choose any name */
+    src: url('fonts/SoleilLight.otf'); /* replace with your font file path */
+}
+@font-face {
+    font-family: 'Soleil-book'; /* you can choose any name */
+    src: url('fonts/SoleilBook.otf'); /* replace with your font file path */
+}
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI ", sans-serif;
     font-weight: 500;
     font-size: 14px;
 }
 body{
     color: #020817;
+    font-family: 'Soleil-book', sans-serif;
 }
 
 .container {
@@ -52,16 +67,17 @@ li {
 
 .nav_links {
     text-decoration: none;
-    color: black;
+    color: #0f172a;
     padding: 12px;
     border-radius: 6px;
-    font-size: inherit;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
 
 .nav_links:hover {
     background-color: #F1F5F9;
+    transition: 0.4s;
 }
 
 .logo img {
@@ -72,6 +88,7 @@ li {
 .logo {
     position: relative;
     left: -15px;
+    min-width: 110px;
 }
 .logo a{
     text-decoration: none;
@@ -96,6 +113,8 @@ li {
     background-color: #000000;
     border-radius: 6px;
     padding: 12px 32px;
+    max-height: 44px;
+    max-width: 120px;
     color: white;
 }
 
@@ -220,7 +239,7 @@ main {
 
 .card {
     width: 381px;
-    border: 1px solid #d7d5d5;
+    border: 1px solid #efebeb;
     padding: 20px;
     border-radius: 10px;
 }
@@ -264,6 +283,7 @@ main {
     font-weight: 600;
     border: none;
     display: flex;
+    height: 64px;
     align-items: center;
     font-size: 20px;
     line-height: 28px;
@@ -273,7 +293,7 @@ main {
 }
 
 .join button img {
-    width: 40px;
+    width: 25px;
     margin-right: 5px;
 }
 .join p{
@@ -343,7 +363,8 @@ main {
 .team-cards{
     display: flex;
     justify-content: space-between;
-    gap: 1.25rem;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 30px;
 }
 
@@ -556,13 +577,20 @@ main {
 }
 .hero2{
     width: 470px;
-    margin: 20px auto;
+    margin: 20px auto 0;
 }
 .hero2 img{
     width: 100%;
     border-radius: 10px;
 }
 /*footer---------------------------------*/
+
+footer{
+    border-top: 1px solid #d7d5d5;
+    padding: 40px 0;
+}
+
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -571,8 +599,12 @@ main {
 }
 .footer-links{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
     margin: 20px 0;
+}
+.footer-links a:nth-last-child(-n+3) {
+    margin-left: 48px;
 }
 .footer-links a{
     text-decoration: none;
@@ -589,7 +621,7 @@ main {
 }
 .footer-socials{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     margin: 20px 0;
 }
 .footer-socials a{
@@ -600,6 +632,10 @@ main {
     letter-spacing: 0.5px;
     border-bottom: 2px solid transparent;
 }
+.footer-socials a:nth-last-child(-n+4) {
+    margin-left: 48px;
+}
+
 .footer-socials a:hover{
     transition: 0.3s;
     color: #000000;
