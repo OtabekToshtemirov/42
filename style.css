@@ -132,6 +132,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
+    padding-bottom: 0;
     background-color: #F1F5F9;
     margin-top: 25px;
     border-radius: 10px;
@@ -139,7 +140,7 @@ li {
 
 section .section_text {
     width: 60%;
-    padding: 0 50px;
+    padding: 15px 50px 30px;
 }
 
 section .section_text h1 {
@@ -153,7 +154,8 @@ section .section_image {
     width: 40%;
     padding: 20px;
     position: relative;
-    top: 100px;
+    top: 80px;
+    right: 40px;
     margin-left: 30px;
 }
 
@@ -172,7 +174,7 @@ section .section_text p {
 section .section_text button {
     background-color: #000000;
     border-radius: 6px;
-    padding: 10px 25px;
+    padding: 15px 28px;
     color: white;
     font-weight: 600;
     border: none;
@@ -314,6 +316,7 @@ main {
 
 .statistics-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.25rem;
     margin-top: 30px;
@@ -409,6 +412,11 @@ main {
     font-weight: 600;
     margin-top: 10px;
     text-align: center;
+}
+.name a{
+    text-decoration: none;
+    color: #0A66C2;
+
 }
 .position{
     font-size: 14px;
@@ -663,4 +671,160 @@ footer{
     color:rgba(2, 8, 23, 0.8);
     font-size: 12px;
     line-height: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .container{
+        padding: 0 20px;
+
+    }
+    .tepa-sec{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    section .section_text h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    section .section_image{
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-left: 0;
+    }
+    section .section_text{
+        width: 100%;
+        padding: 15px 20px 30px;
+    }
+    section .section_text button{
+        padding: 8px 22px;
+        font-size: 14px;
+        & img{
+            width: 20px;
+        }
+    }
+    .main-header{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .main-header h1{
+        font-size: 36px;
+    }
+    .main-header-img{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        position: relative;
+        top: 45px;
+        right: 0;
+        margin-left: 0;
+    }
+    .main-header-img img{
+        width: 30%;
+        margin-left: 0;
+    }
+    .card{
+        width: 320px;
+    }
+    .join p{
+        width: 100%;
+    }
+    .join button{
+        padding: 8px 22px;
+        font-size: 14px;
+        height: 45px;
+        & img{
+            width: 20px;
+        }
+    }
+    .stat_title{
+        font-size: 30px;
+    }
+    .stat_descp{
+        width: 100%;
+    }
+    .statistics-card{
+        width: 220px;
+    }
+    .statistics-card span{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .team_title{
+        font-size: 30px;
+    }
+    .team_descp{
+        width: 80%;
+    }
+    .team-card{
+        width: 100%;
+    }
+    .students_title{
+        font-size: 30px;
+    }
+    .students_descp{
+        width: 100%;
+    }
+    .heads-image{
+        width: 90%;
+    }
+    .heads-image img{
+        width: 100%;
+    }
+    .faq_title{
+        font-size: 30px;
+
+    }
+    .faq_descp{
+        width: 100%;
+    }
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ishtirok, .savol{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .savol{
+        margin-top: 10px;
+    }
+    .ishtirok img{
+        width: 20px;
+    }
+    .hero2{
+        width: 100%;
+    }
+
+}
+/*-----------------------------------max-width 640px*/
+@media screen and (max-width: 640px) {
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 420px;
+    }
+    .statistics-card{
+        width: 100%;
+    }
+    .footer-links a:nth-last-child(-n+4) {
+        margin-left: 48px;
+    }
 }
